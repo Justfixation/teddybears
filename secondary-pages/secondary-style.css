@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+	*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #1F2937;
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  gap: 10px;
+  color: #F9FAF8;
+  padding: 8px 40px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo:focus {
+  outline: none;
+}
+
+.logo img {
+  height: 25px;
+  width: auto;
+}
+
+.content {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  max-height: 600px;
+  width: auto;
+  flex: 0 1 auto;
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 8px;
+  margin: 0;
+}

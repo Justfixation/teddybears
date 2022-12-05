@@ -9,12 +9,12 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #1F2937;
+  margin: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 32px;
 }
 
 .logo {
@@ -24,6 +24,12 @@ body {
   gap: 10px;
   font-size: 24px;
   color: #F9FAF8;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+.logo:focus {
+  outline: none;
 }
 
 .logo img {
@@ -34,6 +40,11 @@ body {
 }
 
 .header-links {
+  margin: 8px 40px;
+}
+
+.header-links,
+.header-links .sibling {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -41,7 +52,22 @@ body {
   color: #E5E7EB;
 }
 
-a {
+.header-links .sibling {
+  border: 0.5px solid white;
+  padding: 3px 10px;
+}
+
+.sibling a:nth-last-child(n+2) {
+  border-right: 0.5px solid white;
+  padding-right: 10px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+.header-links a:hover {
   text-decoration: underline;
   color: #E5E7EB;
 }
@@ -87,6 +113,11 @@ a {
   font-weight: bold;
   padding: 7px;
   margin-top: 10px;
+}
+
+.newsletter-text button:hover {
+  background-color: white;
+  color: #3882F6;
 }
 
 .newsletter img {
@@ -148,4 +179,36 @@ a {
 .author {
   align-self: end;
   font-weight: bold;
+}
+
+.call-to-action {
+  display: flex;
+  background-color: #3882F6;
+  color: white;
+  border-radius: 7px;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  padding: 24px 100px;
+  margin: 64px 0;
+}
+
+.call-to-action button {
+  background-color: #3882F6;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.call-to-action button:hover {
+  background-color: white;
+  color: #3882F6;
+}
+
+.footer p {
+  text-align: center;
+  color: #E5E7EB;
+  font-size: 12px;
 }

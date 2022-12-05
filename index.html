@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Bob's Bears</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <!-- Header -->
     <div class="header">
-      <div class="logo">
+      <a href="./index.html" class="logo">
         <img src="./img/teddy-logo.png" alt="Our founder, Bob the teddy.">
         <span>Bob's Bears</span>
-      </div>  
+      </a>  
       <div class="header-links">
         <span>Bob's sibling franchises:</span>
-        <a href="./secondary-pages/prank.html">Gina's Giraffes</a>
-        <a href="./secondary-pages/prank.html">Aaron's Aardvarks</a>
-        <a href="./secondary-pages/prank.html">Ptyler's Pterodactyls</a>
+        <div class="sibling">
+          <a href="./secondary-pages/prank.html">Gina's Giraffes</a>
+          <a href="./secondary-pages/prank.html">Aaron's Aardvarks</a>
+          <a href="./secondary-pages/prank.html">Ptyler's Pterodactyls</a>
+        </div>
       </div>
     </div>
     <!-- Section 1 -->
@@ -27,7 +29,7 @@
           <p class="hero">Bob the teddy saves wild bears he meets on his travels.</p>
           <p>Sign up for his newsletter to be notified by Newsletter Nick when more friends are found
             for the shop!</p>
-          <button>Sign up</button>
+          <a href="./secondary-pages/prank.html"><button>Sign up</button></a>
         </div>
         <img src="./img/teddy-back.jpg" alt="Our newsletter bear - Newsletter Nick.">
       </div>
@@ -35,7 +37,6 @@
     <div class="section back-white">
       <h3>Our bear friends</h3>
       <div class="merchandise">
-        
         <div>
           <img src="./img/studious-stan.jpg" alt="Studious Stan">
           <p>Studious Stan</p>
@@ -55,7 +56,6 @@
           <img class="big-bongo" src="./img/big-bongo.jpg" alt="Big Bongo">
           <p>Big Bongo</p>
         </div>
-
       </div>
     </div>
     <!-- Section 3 -->
@@ -68,12 +68,13 @@
     </div>
     <!-- Section 4 -->
     <div class="section back-white">
-      <div>
+      <div class="call-to-action">
         <div class="text">
           <h3>Click here to save a bear!</h3>
           <p><em>Don't they deserve a loving home too?</em></p>
         </div>
-        <button href="./secondary-pages/purchase.html">Purchase</button>
+        <a href="./secondary-pages/purchase.html"><button href="./secondary-pages/purchase.html">Purchase</button>
+        </a>
       </div>
     </div>
     <!-- Footer -->
